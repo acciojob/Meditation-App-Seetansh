@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meditation App</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div id="app">
+    <div class="vid-container">
+      <video id="video" src="video/beach.mp4" loop muted></video>
+    </div>
+    <div class="player-container">
+      <audio id="audio" src="Sounds/beach.mp3" loop></audio>
+    </div>
+    <div class="sound-picker">
+      <button id="sound1">Beach Sound</button>
+      <button id="sound2">Rain Sound</button>
+    </div>
+    <div id="time-select">
+      <button id="smaller-mins">2 min</button>
+      <button id="medium-mins">5 min</button>
+      <button id="long-mins">10 min</button>
+    </div>
+    <div class="time-display">10:0</div>
+    <button class="play">Play</button>
+  </div>
+  <script src="script.js"></script>
 </body>
-
 </html>

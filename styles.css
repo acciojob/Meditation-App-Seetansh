@@ -1,1 +1,111 @@
 /*  your css code here. If applicable */
+body {
+  background: #e0eafc;
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 350px;
+}
+
+.vid-container {
+  width: 320px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.vid-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.player-container {
+  display: none; /* Hide native audio controls */
+}
+
+.sound-picker {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.sound-picker button {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #b2fefa;
+  color: #1a2a6c;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sound-picker button.active,
+.sound-picker button:hover {
+  background: #1a2a6c;
+  color: #fff;
+}
+
+#time-select {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#time-select button {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #fbc2eb;
+  color: #6a3093;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#time-select button.active,
+#time-select button:hover {
+  background: #6a3093;
+  color: #fff;
+}
+
+.time-display {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  color: #1a2a6c;
+  letter-spacing: 2px;
+}
+
+.play {
+  padding: 0.7rem 2.2rem;
+  border: none;
+  border-radius: 20px;
+  background: #1a2a6c;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.play:hover {
+  background: #6a3093;
+}
